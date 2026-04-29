@@ -1,10 +1,10 @@
-# 🏥 Clinic Appointment No-Show Dashboard
+# Clinic Appointment No-Show Dashboard
 
 > A Python data analysis project that identifies factors linked to patient no-shows using synthetic clinic appointment data, SQL queries, and an Excel dashboard.
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
