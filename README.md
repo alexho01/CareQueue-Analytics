@@ -7,6 +7,7 @@
 ## 📋 Table of Contents
 
 - [Project Overview](#project-overview)
+- [Screenshots](#screenshots)
 - [Dataset](#dataset)
 - [Project Structure](#project-structure)
 - [How the Code Works](#how-the-code-works)
@@ -31,6 +32,26 @@ The core question I wanted to answer was:
 **"What factors are linked to patients missing their clinic appointments?"**
 
 To explore this, I generated a realistic synthetic dataset of 5,000 appointments, stored everything in a SQLite database, ran SQL analysis across several different angles, and put together a formatted Excel dashboard with charts, tables, and practical recommendations.
+
+---
+
+## Screenshots
+
+### Excel Dashboard
+The final output from `build_excel.py`. It includes 7 sheets covering KPI cards, analysis tables with colour-scale formatting, embedded charts, high-risk segments, and recommendations. The Executive Summary sheet shown below gives an at-a-glance view of the most important numbers.
+
+![Excel Dashboard](images/Exceldashboard.png)
+
+The colour coding on the no-show rate column makes it easy to spot which groups are highest risk at a glance. Red means high no-show rate, yellow is medium, and green is low. You can see straight away that the 18-30 age group (26.7%) and patients who did not receive an SMS reminder (28.11%) stand out as the biggest problem areas.
+
+---
+
+### SQLite Database
+This is what the generated dataset looks like when viewed in DB Browser for SQLite. Each row is one appointment record with all 16 columns populated. The data was created by `generate_data.py` and saved to `clinic.db`, which is then queried by `sql_analysis.py`.
+
+![SQLite Database](images/SQLlite.png)
+
+You can see columns like `Appointment_ID`, `Patient_ID`, `Age`, `Appointment_Date`, `Scheduled_Date`, `Waiting_Days`, and `Appointment_Day` all populated with realistic values. Row 3 for example shows a patient who waited 38 days for their appointment, which based on the analysis is the kind of booking most likely to result in a no-show.
 
 ---
 
@@ -67,6 +88,10 @@ clinic_project/
 ├── generate_data.py              # Step 1: Creates the dataset
 ├── sql_analysis.py               # Step 2: Runs SQL queries and saves results
 ├── build_excel.py                # Step 3: Builds the Excel dashboard
+│
+├── images/
+│   ├── Exceldashboard.png        # Screenshot of the Excel output
+│   └── SQLlite.png               # Screenshot of the SQLite database
 │
 ├── appointments.csv              # Auto-generated: raw dataset in CSV format
 ├── clinic.db                     # Auto-generated: SQLite database
