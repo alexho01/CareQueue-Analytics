@@ -38,7 +38,7 @@ To explore this, I generated a realistic synthetic dataset of 5,000 appointments
 ## Screenshots
 
 ### Excel Dashboard
-The final output from `build_excel.py`. It includes 7 sheets covering KPI cards, analysis tables with colour-scale formatting, embedded charts, high-risk segments, and recommendations. The Executive Summary sheet shown below gives an at-a-glance view of the most important numbers.
+The final output from `build_excel.py`. It includes 7 sheets covering KPI cards, analysis tables with colour-scale formatting, embedded charts, high-risk segments, and recommendations. The Executive Summary sheet shown below gives a view of the most important numbers.
 
 ![Excel Dashboard](images/Exceldashboard.png)
 
