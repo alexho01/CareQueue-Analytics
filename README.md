@@ -1,10 +1,10 @@
-# 🏥 CareQueue Analytics - Clinic No-Show Dashboard
+# CareQueue Analytics - Clinic No-Show Dashboard
 
 > A Python data analysis project that looks at what factors are linked to patients missing their clinic appointments, using synthetic appointment data, SQL queries, and an Excel dashboard.
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Project Overview](#project-overview)
 - [Screenshots](#screenshots)
