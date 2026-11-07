@@ -409,12 +409,4 @@ If you want to explore the SQLite database directly, download **DB Browser for S
 
 ---
 
-## Notes
-
-- All data in this project is completely synthetic. No real patient information was used at any point.
-- The no-show probabilities are based on patterns you would expect to see in a real clinic setting, but they are not taken from any actual dataset.
-- SQLite was chosen over MySQL or PostgreSQL because it runs entirely as a local file, so there is nothing to install or configure on a server. If you ever want to move to MySQL, only the database connection line would need to change. All the SQL queries are written in standard SQL and would work as-is.
-
----
-
 *Built as a healthcare data analytics portfolio project to practise SQL, Python, and Excel dashboard skills.*
